@@ -67,11 +67,17 @@ h2{font-size:clamp(2.1rem,4.6vw,3.2rem);margin:12px 0 14px;color:var(--navy)}
 .bk{display:flex;justify-content:space-between;align-items:center;margin:20px 26px 26px;padding:14px 20px;border-radius:999px;background:var(--soft);text-decoration:none;font-weight:600;font-size:.85rem;color:var(--blue);transition:all .25s}
 .bk::after{content:"→"}
 .bk:hover{background:var(--blue);color:#fff}
-.gal{background:var(--soft)}
-.mos{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:50px}
-@media(max-width:860px){.mos{grid-template-columns:repeat(2,1fr)}}
-.mos img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;border-radius:20px}
-.mos img:nth-child(4n+2),.mos img:nth-child(4n+3){border-radius:999px 999px 20px 20px}
+.gal{background:linear-gradient(180deg,var(--soft),rgba(255,255,255,0));padding:90px 0 30px}
+.mos{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:18px;margin-top:44px}
+.mos img{display:block;width:100%;height:100%;object-fit:cover;border-radius:26px;box-shadow:0 18px 40px rgba(20,33,61,.10);transition:transform .35s ease,box-shadow .35s ease}
+.mos img:hover{transform:translateY(-4px);box-shadow:0 22px 48px rgba(20,33,61,.18)}
+.mos img:nth-child(1){grid-column:span 5;height:460px}
+.mos img:nth-child(2){grid-column:span 3;height:460px}
+.mos img:nth-child(3){grid-column:span 4;height:460px}
+.mos img:nth-child(4){grid-column:span 4;height:280px}
+.mos img:nth-child(5){grid-column:span 4;height:280px}
+.mos img:nth-child(6){grid-column:span 4;height:280px}
+@media(max-width:860px){.mos{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.mos img:nth-child(n){grid-column:auto;height:280px}}
 .book .box{background:linear-gradient(135deg,#14213d,#1f3358);color:#fff;border-radius:34px;padding:60px;display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center}
 @media(max-width:860px){.book .box{grid-template-columns:1fr;padding:34px 24px;gap:34px}}
 .book .box h2{color:#fff}
@@ -126,7 +132,7 @@ footer b{display:block;font-family:'DM Serif Display',serif;font-weight:400;font
 <body>
 <header><div class="wrap"><nav>
 <a class="logo" href="#top">Elysora Luxury Spa<span>.</span></a>
-<div class="links"><div class="dd"><a class="dd-t" href="#services">Our Services <span class="ch">⌄</span></a><div class="dd-m"><a href="#services">All treatments</a><button data-open="nails">Nails &amp; Nail Art</button><button data-open="pedi">Pedicure &amp; Manicure</button><button data-open="braids">Braids &amp; Twists</button><button data-open="locs">Locs &amp; Loc Care</button><button data-open="facial">Facials</button><button data-open="wax">Waxing</button><button data-open="massage">Massage</button><button data-open="scrub">Body Scrubs &amp; Skin Care</button><button data-open="couples">Couples Suite</button></div></div><a href="#gallery">Gallery</a><a href="#visit">Contact</a><a class="btn" href="#book">Book now</a></div>
+<div class="links"><div class="dd"><a class="dd-t" href="#services">Our Services <span class="ch">⌄</span></a><div class="dd-m"><a href="#services">All treatments</a><button data-open="nails">Nails &amp; Nail Art</button><button data-open="pedi">Pedicure &amp; Manicure</button><button data-open="braids">Braids &amp; Twists</button><button data-open="locs">Locs &amp; Loc Care</button><button data-open="facial">Facials</button><button data-open="wax">Waxing</button><button data-open="massage">Massage</button><button data-open="scrub">Body Scrubs &amp; Skin Care</button><button data-open="couples">Couples Suite</button></div></div><a href="#gallery">Gallery</a><a href="history.html">History</a><a href="#visit">Contact</a><a class="btn" href="#book">Book now</a></div>
 </nav></div></header>
 
 <main id="top">
